@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Road+Rage&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding: 12px 2.1875rem 12px 2.1875rem;
+}
+
+#icon{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Road Rage', cursive;
+    font-size: 20px;
+}
+
+#icon img{
+    margin-right: 8px;
+}
+#contacto{
+    display: flex;
+    align-items: center;
+}
+#contacto a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+nav{
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+nav ul li a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+main{
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+#banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url('../imagenes/bannerBlanco.png');
+    background-size: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Road Rage', cursive;
+}
+
+#banner-container p{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-around;
+    padding: 101px 100px 101px 100px;
+}
+
+.items{
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-item{
+    color: rgb(44, 44, 44);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.texto-item{
+    color: #757575;
+}
+
+#separar{
+    height: 30px;
+    background-color: #f5f5f5;
+}
+
+/*Tabla*/
+
+#btnCrear{
+    background-color: black;
+    border: none;
+}
+
+.btn{
+    margin-right: 10px;
+}
+
+table thead{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    border-top: 1px solid rgb(221, 221, 221);;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    align-items: center;
+}
+footer img{
+    margin-right: 8px;
+    height: 24px;
+}

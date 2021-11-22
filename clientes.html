@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header>
+        <a id="icon" href="index.html">
+            <img src="icons/maps_home_work_black_24dp.svg" alt="icon">
+            <h1>ANDAMIOS</h1>
+        </a>
+        <div id="contacto">
+            
+            <a href="#"><img src="icons/contact_phone_black_24dp.svg" alt="contacto"></a>
+            <a href="#">Contacto</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+        </ul>
+    </nav>
+    <div id="separar"></div>
+    <main>
+        <div class="container mt-0 shadow-lg p-3 sb-3 bg-body rounded"> 
+            <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"> Crear </button>
+            <table id="tableArticulos" class="table mt-2 table-bordered table-striped">  
+                <thead>
+                    <tr class="text_center">
+                        <th> Id </th>
+                        <th> Nombres </th>
+                        <th> Apellidos </th>
+                        <th> Tipodoc </th>
+                        <th> Documento </th>
+                        <th> Numero </th>
+                        <th> Clasificacion </th>
+                        <th> Acciones </th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+        <div id="modalCliente"  class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="nombres" class="col-form-label">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="apellidos" class="col-form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="tipodoc" class="col-form-label">Tipodoc:</label>
+                    <input type="text" class="form-control" id="tipodoc" autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="documento" class="col-form-label">Documento:</label>
+                    <input type="text" class="form-control" id="documento" autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="numero" class="col-form-label">Numero:</label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="mb-3">
+                    <label for="clasificacion" class="col-form-label">Clasificacion:</label>
+                    <input type="text" class="form-control" id="clasificacion">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+        <script src="js/code.js"></script>
+    </main>
+    <footer>
+        <img src="icons/maps_home_work_black_24dp.svg" alt="">
+        <p>Todo los derechos Reservados</p>
+    </footer>
+</body>
+</html>
